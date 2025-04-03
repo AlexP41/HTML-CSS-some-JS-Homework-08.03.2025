@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+
+
+.primary-header {
+  color: #555;
+  font-size: 2;
+}
+
+
+.block {
+ display: flex;
+ position: relative;
+ flex-direction: column;
+  background-color: #fff;
+  /* flex: 6 0 0; */
+  box-shadow: 0 .4rem 3.2rem rgba(0, 0, 0, 0.075);
+  padding: 0.6rem 1.2rem;
+  gap: 1.2rem;
+  transition: all 0.3s;
+  width: 100%;
+  height: auto; /* Адаптивний розмір */
+
+}
+
+.block:hover  {
+  box-shadow: 0 .4rem 4.8rem rgba(0, 0, 0, 0.3);
+  scale: 1.1;
+  z-index: 999;
+}
+
+.heart-position {
+  top: 5%;
+  right: 1rem;
+}
+
+.scale-position {
+  top: 25%;
+  right: 1rem;
+}
+
+.heart-scales-icons{
+  width: 30%;
+  height: 15%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #eee;
+  border-radius: 25%;
+  z-index: 999;
+  opacity: 75%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heart-outline {
+  height: 100%;
+  width: 100%;
+  color: orange;
+  transition: color 0.3s ease-in-out;
+}
+
+.scale-outline {
+  height: 100%;
+  width: 100%;
+  color: green;
+  transition: color 0.3s ease-in-out;
+}
+
+.heart-scales-icons:hover,
+.heart-scales-icons:hover .heart-outline {
+  transform: scale(1.1);
+  color: red;
+  animation: pulse 0.6s infinite alternate ease-in-out;
+}
+
+
+
+.heart-scales-icons:hover,
+.heart-scales-icons:hover .scale-outline {
+  transform: scale(1.1);
+  color: blue;
+  animation: pulse 0.6s infinite alternate ease-in-out;
+}
+
+
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.good-image {
+  max-width: 100%;
+  transition: all 0.3s;
+}
+
+.good-image:hover {
+  transform: scale(1.1);
+}
+
+.good-info {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Дозволяє максимум 2 рядки */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Додає "..." при обрізанні */
+  color: #555;
+  font-size: 1.6rem;
+}
+
+.good-info:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.flex--6 {
+  gap: 2rem;
+}
+.price-old {
+  color: #999 ;
+  font-size: 1.6rem;
+}
+
+.price-new {
+  color: red;
+  font-size: 2.4rem;
+}
+.cart-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: green;
+  transition: all 0.3s;
+}
+
+.cart-outline:hover,
+.cart-outline:active {
+  color: orangered;
+  cursor: pointer;
+  scale: 1.2;
+}
+

@@ -21,11 +21,16 @@ body {
 
 
 
+
+
 .primary-header {
   color: #555;
   font-size: 2;
 }
 
+.flex--6 {
+  /* gap: 2rem; */
+}
 
 .block {
  display: flex;
@@ -33,13 +38,12 @@ body {
  flex-direction: column;
   background-color: #fff;
   /* flex: 6 0 0; */
-  box-shadow: 0 .4rem 3.2rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0rem 1rem 3.2rem rgba(0, 0, 0, 0.075);
   padding: 0.6rem 1.2rem;
   gap: 1.2rem;
   transition: all 0.3s;
   width: 100%;
   height: auto; /* Адаптивний розмір */
-
 }
 
 .block:hover  {
@@ -160,9 +164,6 @@ body {
   margin-top: auto;
 }
 
-.flex--6 {
-  gap: 2rem;
-}
 .price-old {
   color: #999 ;
   font-size: 1.6rem;

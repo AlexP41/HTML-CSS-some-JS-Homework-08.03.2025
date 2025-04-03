@@ -41,6 +41,13 @@ class ProductCard {
   }
 }
 
+
+
+
+
+
+
+
 const product1 = new ProductCard(
   "/images/goods-image.png",
   "Електрична кавомолка з регулюванням помелу",
@@ -89,6 +96,8 @@ const product6 = new ProductCard(
   "Пилосос з потужним всмоктуванням та можливістю вологого прибирання, ідеальний для дому та офісу."
 );
 
+
+
 document.getElementById("cards-container").innerHTML =
   product1.generateCard() +
   product2.generateCard() +
@@ -116,7 +125,6 @@ const overlay = document.querySelector(".overlay");
 const closeGoodDescryption = document.querySelector(".close-good-description");
 
 // Opening Good Descryption
-
 goodsInformations.forEach((goodInformation) => {
   goodInformation.addEventListener("click", () => {
     overlay.classList.remove("hidden");
@@ -141,13 +149,11 @@ goodsInformations.forEach((goodInformation) => {
 
 // CLosing Good Descryption
 
-/*************  ✨ Codeium Command ⭐  *************/
 /**
  * Closes the good description overlay by adding the "hidden" class to the overlay, detailed description, 
  * and good description elements. Toggles the "active" state of the detailed text.
  */
 
-/******  8d9f362e-babd-4095-aa57-1cf1cda20c6e  *******/
 const closeGoodDescryptionFunction = function () {
   overlay.classList.add("hidden");
   detailedDescryption.classList.add("hidden");
@@ -165,13 +171,7 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-/*
-document.addEventListener('keydown' , function (event) {
-  if (event.key === "Escape" && !goodDescryption.classList.contains("hidden")) {
-     closeGoodDescryptionFunction();
-  } 
-});
-*/ 
+
 
 
 

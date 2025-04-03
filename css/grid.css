@@ -5,7 +5,7 @@
 
 .row {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
   padding: 0 9.6rem;
   margin-bottom: 0rem;
   /* justify-content: space-between; */
@@ -15,8 +15,6 @@
 .col {
   display: flex;
 }
-
-
 
 .col--1 {
   flex: 1 0 0;
@@ -35,25 +33,16 @@
 }
 
 .col--5 {
-  width: calc(100% / 12 * 5);
-  /* flex: 5 0 0; */
-  background-color: red;
-  font-size: 1.6rem;
-  color: #fff;
-  padding: 2rem;
+  flex: 5 0 0;
 }
 
 .col--6 {
+  /* width: calc(100% / 12 * 6); */
   flex: 6 0 0;
 }
 
 .col--7 {
-  width: calc(100% / 12 * 7);
-  /* flex: 7 0 0; */
-  background-color: blue;
-  font-size: 1.6rem;
-  color: #fff;
-  padding: 2rem;
+  flex: 7 0 0;
 }
 
 .col--8 {

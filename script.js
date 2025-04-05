@@ -49,7 +49,7 @@ class ProductCard {
 
 
 const product1 = new ProductCard(
-  "/images/goods-image.png",
+  "./images/goods-image.png",
   "Електрична кавомолка з регулюванням помелу",
   "1500 $",
   "900 $",
@@ -57,7 +57,7 @@ const product1 = new ProductCard(
 );
 
 const product2 = new ProductCard(
-  "/images/goods-image.png",
+  "./images/goods-image.png",
   "Блендер з кількома швидкостями",
   "2500 $",
   "1500 $",
@@ -65,7 +65,7 @@ const product2 = new ProductCard(
 );
 
 const product3 = new ProductCard(
-  "/images/goods-image.png",
+  "./images/goods-image.png",
   "Мультиварка з функцією пароварки",
   "3500 $",
   "2500 $",
@@ -73,7 +73,7 @@ const product3 = new ProductCard(
 );
 
 const product4 = new ProductCard(
-  "/images/goods-image.png",
+  "./images/goods-image.png",
   "Кавоварка з автоматичним відключенням",
   "2200 $",
   "1600 $",
@@ -81,7 +81,7 @@ const product4 = new ProductCard(
 );
 
 const product5 = new ProductCard(
-  "/images/goods-image.png",
+  "./images/goods-image.png",
   "Фритюрниця з регулюванням температури",
   "2000 $",
   "1300 $",
@@ -89,7 +89,7 @@ const product5 = new ProductCard(
 );
 
 const product6 = new ProductCard(
-  "/images/goods-image.png",
+  "./images/goods-image.png",
   "Пилосос з функцією мокрого прибирання",
   "3000 $",
   "1800 $",
